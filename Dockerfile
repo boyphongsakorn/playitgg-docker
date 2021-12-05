@@ -8,6 +8,6 @@ RUN apk add --update curl
 #CMD playit-linux_64-0.4.6
 
 RUN curl https://playit.gg/downloads/playit-armv7-0.4.6 --output playit-armv7-0.4.6
-COPY playit-armv7-0.4.6 /
+#COPY playit-armv7-0.4.6 /
 RUN chmod a+x /playit-armv7-0.4.6
 CMD [ "/playit-armv7-0.4.6" ]
