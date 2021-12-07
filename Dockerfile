@@ -19,17 +19,15 @@
 #COPY . .
 #CMD ["npm","run","playit"]
 
-FROM aarch64/alpine:3.5
+FROM aarch64/alpine:latest
 RUN apk add --no-cache --update curl git gcc build-base alpine-sdk
 RUN curl -LJO https://playit.gg/downloads/playit-aarch64-0.4.6
 #RUN cp playit-aarch64-0.4.6 /
 
-WORKDIR /
+#COPY playit-aarch64-0.4.6 /
+RUN chmod a+x /playit-aarch64-0.4.6
 
-COPY playit-aarch64-0.4.6 /
-RUN chmod +x /playit-aarch64-0.4.6
-
-CMD ls
+#CMD ls
 CMD ./playit-aarch64-0.4.6
 
 #RUN chmod a+x playit-aarch64-0.4.6
