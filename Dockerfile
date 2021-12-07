@@ -27,10 +27,10 @@ RUN curl -LJO https://playit.gg/downloads/playit-aarch64-0.4.6
 WORKDIR /
 
 COPY playit-aarch64-0.4.6 /
-RUN chmod a+x /playit-aarch64-0.4.6
+RUN chmod +x /playit-aarch64-0.4.6
 
-CMD [ "ls" ]
-CMD [ "/playit-aarch64-0.4.6" ]
+CMD ls
+CMD ./playit-aarch64-0.4.6
 
 #RUN chmod a+x playit-aarch64-0.4.6
 #CMD [ "/playit-linux_64-0.4.6" ]
