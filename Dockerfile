@@ -22,8 +22,8 @@
 FROM aarch64/alpine:3.5
 #RUN apk add --update curl
 #RUN wget https://playit.gg/downloads/playit-aarch64-0.4.6
-#COPY playit-linux_64-0.4.6 /
+COPY playit-aarch64-0.4.6 /
 RUN chmod a+x /playit-aarch64-0.4.6
 #CMD [ "/playit-linux_64-0.4.6" ]
 #RUN chmod a+x playit-linux_64-0.4.6
-CMD ./playit-aarch64-0.4.6
+CMD [ "./playit-aarch64-0.4.6" ]
