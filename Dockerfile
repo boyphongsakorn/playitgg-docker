@@ -26,4 +26,4 @@ COPY playit-aarch64-0.4.6 /
 RUN chmod a+x /playit-aarch64-0.4.6
 #CMD [ "/playit-linux_64-0.4.6" ]
 #RUN chmod a+x playit-linux_64-0.4.6
-CMD [ "./playit-aarch64-0.4.6" ]
+CMD [ "/playit-aarch64-0.4.6" ]
