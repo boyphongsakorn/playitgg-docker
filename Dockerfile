@@ -30,14 +30,14 @@ RUN curl -L https://playit.gg/downloads/playit-aarch64-0.4.6 --output playit-aar
 #WORKDIR /app/
 WORKDIR /
 
-COPY playit-aarch64-0.4.6 /app/
-RUN chmod a+x /app/playit-aarch64-0.4.6
+#COPY playit-aarch64-0.4.6 /app/
+#RUN chmod a+x /app/playit-aarch64-0.4.6
 RUN chmod a+x /playit-aarch64-0.4.6
 
 #CMD ls
-CMD [ "/playit-aarch64-0.4.6" ]
+#CMD [ "/playit-aarch64-0.4.6" ]
 
 #RUN chmod a+x playit-aarch64-0.4.6
 #CMD [ "/playit-linux_64-0.4.6" ]
 #RUN chmod a+x playit-linux_64-0.4.6
-#CMD playit-aarch64-0.4.6
+CMD /playit-aarch64-0.4.6
