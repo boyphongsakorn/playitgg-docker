@@ -25,11 +25,13 @@ RUN apk add --no-cache --update curl git gcc build-base alpine-sdk
 RUN curl -L https://playit.gg/downloads/playit-aarch64-0.4.6 --output playit-aarch64-0.4.6
 #RUN cp playit-aarch64-0.4.6 /
 
-COPY playit-aarch64-0.4.6 /
-RUN chmod a+x /playit-aarch64-0.4.6
+RUN mkdir -p /app/
+
+COPY playit-aarch64-0.4.6 /app/
+RUN chmod a+x /app/playit-aarch64-0.4.6
 
 #CMD ls
-CMD ./playit-aarch64-0.4.6
+CMD ./app/playit-aarch64-0.4.6
 
 #RUN chmod a+x playit-aarch64-0.4.6
 #CMD [ "/playit-linux_64-0.4.6" ]
