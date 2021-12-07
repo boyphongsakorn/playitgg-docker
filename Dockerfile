@@ -22,7 +22,7 @@
 FROM aarch64/alpine:latest
 RUN apk add --no-cache --update curl git gcc build-base alpine-sdk
 #RUN curl -LJO https://playit.gg/downloads/playit-aarch64-0.4.6
-RUN curl -L -o playit-linux_64-0.4.6 https://playit.gg/downloads/playit-linux_64-0.4.6
+RUN curl -L playit-aarch64-0.4.6 https://playit.gg/downloads/playit-aarch64-0.4.6
 RUN cp playit-aarch64-0.4.6 /
 
 #COPY playit-aarch64-0.4.6 /
