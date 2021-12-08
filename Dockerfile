@@ -5,4 +5,5 @@ WORKDIR /app/
 RUN curl -L https://playit.gg/downloads/playit-aarch64-0.4.6 --output playit-aarch64-0.4.6
 COPY playit-aarch64-0.4.6 /app/
 RUN chmod a+x /app/playit-aarch64-0.4.6
+RUN [[ -f /app/playit-aarch64-0.4.6 ]] && echo "This file exists!"
 CMD /app/playit-aarch64-0.4.6
