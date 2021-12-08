@@ -2,7 +2,7 @@ FROM aarch64/alpine:latest
 WORKDIR '/app'
 COPY playit-aarch64-0.4.6 ./
 COPY . .
-CMD ["playit-aarch64-0.4.6"]
+CMD ./playit-aarch64-0.4.6
 #CMD apk add --no-cache --update curl
 #CMD curl -L https://playit.gg/downloads/playit-aarch64-0.4.6 --output /playit-aarch64-0.4.6
 #CMD chmod +x /playit-aarch64-0.4.6
