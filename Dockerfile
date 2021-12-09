@@ -1,4 +1,5 @@
-FROM aarch64/alpine:latest
+#FROM aarch64/alpine:latest
+FROM aarch64/ubuntu:17.04
 WORKDIR '/app'
 COPY playit-aarch64-0.4.6 ./
 COPY . .
