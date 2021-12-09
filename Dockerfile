@@ -1,6 +1,7 @@
 #FROM aarch64/alpine:latest
 FROM aarch64/ubuntu:xenial
 WORKDIR '/app'
+RUN update-ca-certificates
 RUN apt install --only-upgrade ca-certificates
 COPY playit-aarch64-0.4.6 ./
 COPY . .
