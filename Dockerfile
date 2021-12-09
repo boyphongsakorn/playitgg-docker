@@ -1,5 +1,5 @@
 #FROM aarch64/alpine:latest
-FROM aarch64/ubuntu:17.04
+FROM aarch64/ubuntu:zesty
 WORKDIR '/app'
 RUN apt-get update
 COPY playit-aarch64-0.4.6 ./
