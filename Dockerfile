@@ -1,7 +1,7 @@
 #FROM aarch64/alpine:latest
 FROM aarch64/ubuntu:zesty
 WORKDIR '/app'
-RUN apt-get update
+RUN apt install --only-upgrade ca-certificates
 COPY playit-aarch64-0.4.6 ./
 COPY . .
 #RUN chmod a+x playit-aarch64-0.4.6
