@@ -1,10 +1,11 @@
 #FROM aarch64/alpine:latest
 FROM ubuntu:bionic
+RUN mkdir /app
 WORKDIR '/app'
 RUN apt-get update
 RUN apt-get install ca-certificates -y
 RUN update-ca-certificates
-COPY playit-aarch64-0.4.6 /app
+#COPY playit-aarch64-0.4.6 /app
 COPY . /app
 #RUN chmod a+x playit-aarch64-0.4.6
 RUN chmod 0755 /app/playit-aarch64-0.4.6
