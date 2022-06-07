@@ -1,13 +1,14 @@
-last_update = 1654621255945
+last_update = 1654621509479
 ping_targets = [
     '147.185.221.1:5530',
     '23.133.216.1:5530',
 ]
 refresh_from_api = true
-secret_key = 'b5aad907af8d3390b60fbc540fc1907930ce4df0b294819dc5eed9eea455aab3'
+secret_key = '959724a04dbf6a1a1d618fccaa4797cc332f1c0948899625b3ddd458de38715f'
 
 [[mappings]]
 proto = 'tcp'
 tunnel_ip = '147.185.221.212'
 tunnel_from_port = 61660
+local_ip = '192.168.31.210'
 local_port = 25565
