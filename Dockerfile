@@ -1,5 +1,5 @@
 #FROM aarch64/alpine:latest
-FROM ubuntu:bionic
+FROM ubuntu:20.04
 RUN mkdir /app
 WORKDIR '/app'
 RUN apt-get update
